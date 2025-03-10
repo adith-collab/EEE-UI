@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Tales</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <!-- Replace video with image -->
+    <img src="homepageimg.jpg" id="bg-image" alt="Background Image" />
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="toread.html">Results</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="image-pista">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="home1.webp" alt="Slide 1"></div>
+                        <div class="swiper-slide"><img src="home2.webp" alt="Slide 2"></div>
+                        <div class="swiper-slide"><img src="RegresionAnalysis.jpeg" alt="Slide 3"></div>
+                        <div class="swiper-slide"><img src="allimages.webp" alt="Slide 4"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Hello!</h1><br><br>
+                <h2><b>Welcome to Short term Load Forecasting Project..</b></h2>
+                <h3>Click below button if you wish to view "Forecast Results Analysis".</h3>
+                <a href="results.html"><button>Results</button></a>
+                <a href="toread.html"><button>Outputs</button></a>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="contact.html" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="contact.html" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="contact.html" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="contact.html" class="social-link"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
