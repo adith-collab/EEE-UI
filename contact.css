@@ -1,0 +1,106 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url('contactimg.jpg');    
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-image: url('contactimg1.jpg'); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; /* Centers the heading */
+}
+
+nav {
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    background-color: transparent; /* Ensure the background is transparent */
+    position: absolute; /* Adjust based on your layout needs */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Removes default margin to align items to the very left */
+}
+
+nav ul li {
+    margin-right: 20px; /* Provides spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0b353d; /* Text color */
+    font-size: 16px; /* Font size for readability */
+    font-weight: bold;
+    padding: 10px 20px; /* Padding around text for better interaction area */
+    border-radius: 20px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #52899a; /* Light green background on hover/active */
+}
+/* Contact Info Styling */
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes space evenly around items */
+    margin-top: 20px;
+}
+
+.box {
+    width: 30%; /* Each box will take up 30% of the container width */
+    margin: 10px;
+    padding: 20px;
+    background-image: url('img8.jpg'); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.icon {
+    font-size: 24px; /* Larger icons */
+}
+
+.text h3 {
+    margin: 10px 0 5px; /* Spacing for heading */
+}
+
+.text p {
+    margin: 0; /* Remove default paragraph margin */
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .box {
+        width: 48%; /* Adapt to smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items on smaller screens */
+    }
+
+    .box {
+        width: 100%; /* Full width boxes for very small screens */
+    }
+}
